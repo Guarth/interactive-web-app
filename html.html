@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>The Winter Spoon</title>
+    </head>
+    
+    <body>
+    
+        <!-- navbar
+
+Purpose:
+- Navigation bar that allows users to jump to different sections of the webpage
+- Also holds buttons for user settings (dark mode, reduce motion)
+
+When To Modify:
+- [ ] Project 4 (REQUIRED FEATURE)
+- [ ] Project 5 (REQUIRED FEATURE) 
+- [ ] Project 8 (STRETCH FEATURE) 
+- [ ] Any time between / after
+-->
+<div class="navbar">
+    <ul>
+    <li><a href="#about">About the Event</a></li>
+    <li><a href="#Icecream">Ice Cream</a></li>
+    <li><a href="#Milkshake">Milkshakes</a></li>
+    <li><a href="https://www.codepath.org">CodePath</a></li>
+    <li><button id="theme-button">Toggle Dark Mode</button></li>
+    </ul>
+</div>
+
+
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <div class="header-container">
+
+    <!-- Logo -->
+    <img id="header-img" src="img/proj3_logo.png" alt="The Winter Spoon Logo">
+
+    <!-- Title + Subtitle -->
+    <div class="header-item">
+        <h1>The Winter Spoon</h1>
+        <h2>Subtitle</h2>
+    </div>
+
+    <!-- Buttons -->
+    <div class="header-item">
+        <button class="header-button">View locations</button>
+        <button class="header-button">View menu</button>
+    </div>
+
+</div>
+
+
+   
+
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+     <div id="about" class="revealable">
+        <h2>About the Event</h2>
+        <p>The Winter Spoon has been making cold sweets for families since 1985.
+         We offer the best ice cream, shaved ice and milkshakes. 
+         We use only the highest quality ingredients to craft our homemade sweets. </p>
+     </div>
+
+        <h3>Defeat the heat with Winter's sweets</h3>
+        <h4>Tag Line</h4>
+        <ul>
+            <li> <b>Bullet 1:</b> <i>Description</i></li>
+            <li> <b>Bullet 2:</b> <i>Description</i></li>
+            <li> <b>Bullet 3:</b> <i>Description</i></li>
+        </ul>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        
+        <h2>Event Schedule</h2>
+     <div id="Icecream" class="revealable">
+        <img alt="Cookies and Cream Ice Cream" src="img/Cookies-and-Cream-Ice-Cream-Recipe-3.jpg" style="width:300px"/>
+        <h3>Ice Cream Scooping</h3>
+        <p>We let our customers choose from a variety of delicious flavors and scoop them into our cookie bowls.</p>
+    </div>
+    <div id="Milkshake" class="revealable">
+        <img alt="Chocolate Fugde Milkshake" src="img/Chocolate-Milkshake-1.2.jpg" style="width:300px"/>
+        <h3>Milkshake Mixing</h3>
+        <p>We serve our customers hand crafted milkshakes with all the toppings you could want.</p>
+    </div>
+    
+        <img alt="Snowball Fight" class="revealable" src="img/snowballfight.jpg" style="width:300px"/>
+        <h3>Snowball Showdown</h3>
+        <p>On December 1st kids can join in for our annual snowball fight.</p>
+    
+        <!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+<div id="rsvp" class="revealable">
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <!-- info goes here -->
+             You're melting, burning, boiling in the sun's heat.
+             You think there's no way out until you see our cool,
+             fresh ice cream ready to be eaten. What better time
+              than now to enjoy our ice cold treats!
+        </div>
+        <div class="rsvp-participants">
+            <p>🎟️ Tommy from Texas has RSVP'd.</p>
+            <p>🎟️ Norland from New York has RSVP'd.</p>
+            <p>🎟️ Fatima from Florida has RSVP'd.</p>
+        </div>
+    </div>
+
+    <div class="participants">
+      <!-- RSVPs go here -->
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+            <!-- form inputs go here -->
+             <label for="name">Name:</label>
+             <input type="text" id="name">
+             <label for="state">Home State:</label>
+             <input type="text" id="state">
+             <label for="email">Email:</label>
+             <input type="text" id="email">
+        
+        <!-- Submit button -->
+             <button id="rsvp-button">Submit RSVP</button>
+        </form>
+    </div>      
+</div>
+
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] -->
+         <div id="thanks-modal" class="modal">
+            <div class="modal-content">
+                <div id="modal-text-container">
+                    <p id="thanks-modal-content">Thank you for supporting us!</p>
+                </div>
+                <img id="modal-image" src="img/proj3_logo.png" alt="Celebration image">
+            </div>
+        </div> 
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2>Links</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block" href="https://www.codepath.org">
+            <article>
+                <h3>Link title</h3>
+                <p>Link description</p>
+            </article>
+        </a>
+            
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+
+        <script src="index.js"></script>
+    </body>
+</html>
