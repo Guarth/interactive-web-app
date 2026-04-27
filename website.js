@@ -1,9 +1,4 @@
-/*** Dark Mode ***
-  
-  Purpose:
-  - Use this starter code to add a dark mode feature to your website.
-
-***/
+/*** Dark Mode ***/
 
 // Select the theme button
 let themeButton = document.getElementById("theme-button");
@@ -88,12 +83,7 @@ const validateForm = (event) => {
 // Replace the form button's event listener with a new one that calls validateForm()
 document.getElementById("rsvp-form").addEventListener("submit", validateForm);
 
-/*** Scroll Animations ***
-  
-  Purpose:
-  - Use this starter code to add scroll animations to your website.
-
-***/
+/*** Scroll Animations ***/
 
 // Select all elements with the class 'revealable'.
 let revealableContainers = document.querySelectorAll(".revealable");
