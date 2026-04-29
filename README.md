@@ -6,7 +6,7 @@ Overview
 This project is a dynamic web application built using HTML, CSS, and JavaScript, featuring interactive user input, animations, and real-time UI updates.
 
 ⚙️ Features
-Interactive form handling and validation
+Interactive form handling and validation.
 Dynamic DOM manipulation using JavaScript
 Animated modal popups using setTimeout and setInterval
 User input tracking and display updates
